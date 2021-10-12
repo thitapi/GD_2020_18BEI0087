@@ -1,18 +1,26 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game_Over : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
+    bool End = false;
+    public float delay = 1f;
+
+    public void EndGame()
     {
+        if(!End)
+        {
+            End = true;
+            Debug.Log("Game Over");
+            restart();
+            Invoke("restart", delay);
+        }
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void restart()
     {
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
