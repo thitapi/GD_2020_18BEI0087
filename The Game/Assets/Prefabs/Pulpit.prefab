@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 8054757734991819165}
   - component: {fileID: 1927200478849114519}
   - component: {fileID: -2527596058952644953}
-  - component: {fileID: -4136565877406073751}
   m_Layer: 0
   m_Name: Pulpit
   m_TagString: Ground
@@ -161,18 +160,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
---- !u!114 &-4136565877406073751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6051809737342723456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84fdb82b088b0a94a9ba4f50c1e65e4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8558853878829837058
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,6 +171,8 @@ GameObject:
   - component: {fileID: 4354146725286572133}
   - component: {fileID: 6046160087727165332}
   - component: {fileID: 643306105082446814}
+  - component: {fileID: 1983598200609732541}
+  - component: {fileID: 1983598200609732542}
   m_Layer: 5
   m_Name: Timer_txt
   m_TagString: Untagged
@@ -207,7 +196,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4925556, y: 1.09}
+  m_AnchoredPosition: {x: -0.48, y: 1.09}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &6046160087727165332
@@ -273,3 +262,35 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+--- !u!114 &1983598200609732541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558853878829837058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 0371c47f61bec6a45bb2f2585416bd74, type: 2}
+--- !u!114 &1983598200609732542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558853878829837058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"offset","value":{"x":-0.5,"y":1.0,"z":0.5,"$type":"UnityEngine.Vector3"},"$version":"A"},{"name":"ground","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 6051809737342723456}
